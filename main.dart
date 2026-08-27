@@ -1,8 +1,10 @@
 void main (){
-  print("Hello word");
+  var name = "yered";
+  print("Hello $name");
   main2();
 }
 
 void main2(){
-  print("moi c'est Joshered");
+  var name = "Joshered";
+  print("moi c'est $name");
 }
