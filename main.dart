@@ -1,9 +1,8 @@
-// programme principale
-void main() {
-	print("Hello, World!");
+void main (){
+  print("Hello word");
   main2();
 }
 
-void main2() {
-  print("HEllo");
+void main2(){
+  print("moi c'est Joshered");
 }
