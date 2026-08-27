@@ -1,4 +1,8 @@
-var name = "yered";
+String name = "yered";
+int age =23;
+double height = 2.7;
+bool isTrue = true;
+
 void main (){
   // declartion
   String name2 = "Joshered";
