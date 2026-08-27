@@ -1,10 +1,13 @@
+var name = "yered";
 void main (){
-  var name = "yered";
+  // declartion
+  String name2 = "Joshered";
+  // utlisation
   print("Hello $name");
+  print(name2);
   main2();
 }
 
 void main2(){
-  var name = "Joshered";
   print("moi c'est $name");
 }
