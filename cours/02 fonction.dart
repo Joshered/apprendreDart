@@ -1,8 +1,27 @@
 // fonction
 
-// 1. creation
 /*
+1. creation
 nom(){
-  contenu
+  contenu;
 }
+
+2. appeller
+nom();
+
+3.parametre
+nom(type nom, type nom2,...){
+  ...
+}
+nb: pour des paramettre optionnel on entoure par des croche [type nom]
 */
+
+saluer(String nom, [String postNom=""]){
+  print("bonjou $nom $postNom");
+}
+
+void main(){
+  saluer("yered");
+  saluer("josh","yered");
+}
+
