@@ -20,8 +20,19 @@ saluer(String nom, [String postNom=""]){
   print("bonjou $nom $postNom");
 }
 
+// void main(){
+//   saluer("yered");
+//   saluer("josh","yered");
+// }
+
+// argument nomme
+
+saluer1({nom, postNom}){
+  print("bonjou $nom $postNom");
+}
+
 void main(){
-  saluer("yered");
-  saluer("josh","yered");
+  saluer1(nom:"yered");
+  saluer1(postNom:"josh",nom:"yered");
 }
 
