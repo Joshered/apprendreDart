@@ -25,14 +25,30 @@ saluer(String nom, [String postNom=""]){
 //   saluer("josh","yered");
 // }
 
-// argument nomme
+// 4. argument nomme
 
-saluer1({nom, postNom}){
+saluer1({String? nom,String? postNom}){
   print("bonjou $nom $postNom");
 }
 
-void main(){
-  saluer1(nom:"yered");
-  saluer1(postNom:"josh",nom:"yered");
+// void main(){
+//   saluer1(nom:"yered");
+//   saluer1(postNom:"josh",nom:"yered");
+// }
+
+// 5. le return
+String choisirAmi(){
+  var nom ="yered";
+  return nom;
 }
 
+// void main(){
+//   print(choisirAmi());
+// }
+
+// retur simplifier
+String choisirAmi2() => "Yered";
+
+void main(){
+  print(choisirAmi());
+} 
