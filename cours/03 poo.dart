@@ -1,16 +1,19 @@
 void main(){
-  Person josh = Person();
-  Person yered = Person();
-  yered.age = 22;
+  Person josh = Person(23);
+  Person yered = Person(12);
   print(josh.age);
-  print(yered.eat());
+  print(yered.age);
 }
 
 // creation d'une class: ex personne
 class Person {
-  int? age = 18;
+  int? age;
   bool islive = true;
   List<String>? friends;
+
+  Person(int age){
+    this.age = age;
+  }
 
   speak() {
     print("Je parle");
