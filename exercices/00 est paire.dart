@@ -1,0 +1,1 @@
+// la fonction qui dit si le nombre est paire ou pas
