@@ -17,4 +17,12 @@ const = boite constate(usine)
 
 et pour dire une variable sera remplie plus tard on dit:
 late typeVariable NomVar;
+
+boite peut etre(?) vide, on dit :
+typevar? nomVar;
 */
+String? nom2;
+// lire la boite en securite, cad verifier dabbord si vide
+void main(){
+  print(nom2 ?? 'pas des surnom');
+}
