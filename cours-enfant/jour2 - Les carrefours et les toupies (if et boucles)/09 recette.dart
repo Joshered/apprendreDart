@@ -6,5 +6,5 @@ void main(){
 void recette1(){
   print("1. bouilluir l'eau");
   print("2. met du farine");
-  print("3.petrir");
+  print("3. petrir");
 }
