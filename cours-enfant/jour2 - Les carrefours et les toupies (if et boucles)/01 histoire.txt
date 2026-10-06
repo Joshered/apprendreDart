@@ -1,0 +1,22 @@
+Tu marches dans Goma. Tu arrives à un carrefour. À droite : le marché. À gauche : la maison. Comment tu choisis ?
+
+Tu réfléchis : « Si j'ai faim, je vais au marché. Sinon, je rentre à la maison. »
+
+En Dart, c'est pareil ! On appelle ça un if (si).
+
+🚦 Les carrefours (if / else)
+dart
+var faim = true;
+
+if (faim) {
+  print('Je vais au marché');
+} else {
+  print('Je rentre à la maison');
+}
+Attention au piège ! Si tu poses plusieurs questions, la première vraie gagne.
+
+Imagine : « Si j'ai 10 bonbons, je suis content. Sinon, si j'ai 5 bonbons, je suis triste. »
+
+Mais si tu commences par « si j'ai 0 bonbons », tu ne pourras plus jamais être content ! 😅
+
+Règle magique : commence toujours par la question la plus précise.

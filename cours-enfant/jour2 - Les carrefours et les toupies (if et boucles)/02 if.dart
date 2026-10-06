@@ -1,4 +1,3 @@
-// les choix
 void main(){
   var avoirFaim = true;
 
@@ -8,4 +7,3 @@ void main(){
     print("je rentre chez moi");
   }
 }
-
