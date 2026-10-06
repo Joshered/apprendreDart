@@ -1,0 +1,48 @@
+🍳 Les recettes de cuisine (fonctions)
+Tu veux faire du thé. Tu connais la recette :
+
+Prends une tasse
+
+Mets du thé
+
+Ajoute de l'eau chaude
+
+Ajoute du sucre
+
+Une fonction, c'est une recette. Tu lui donnes un nom, et chaque fois que tu en as besoin, tu l'appelles.
+
+dart
+// La recette
+void faireDuThe() {
+  print('1. Prends une tasse');
+  print('2. Mets du thé');
+  print('3. Ajoute de l\'eau chaude');
+  print('4. Ajoute du sucre');
+}
+
+// L'utiliser
+faireDuThe();  // Il fait du thé !
+faireDuThe();  // Encore du thé !
+Les recettes avec des ingrédients (paramètres)
+Parfois, la recette a besoin d'ingrédients :
+
+dart
+// Cette recette a besoin de 2 ingrédients : les sacs et le prix
+int calculerTotal(int sacs, int prix) {
+  return sacs * prix;
+}
+
+// Je l'utilise
+var total = calculerTotal(10, 2500);  // 10 sacs × 2500 FC
+print(total);  // 25000
+Astuce spéciale Dart : on peut nommer les ingrédients ! C'est plus clair.
+
+dart
+// Les ingrédients ont des noms
+int calculerTotal({required int sacs, required int prix}) {
+  return sacs * prix;
+}
+
+// On utilise les noms
+var total = calculerTotal(sacs: 10, prix: 2500);
+Le mot required = « cet ingrédient est obligatoire » !
