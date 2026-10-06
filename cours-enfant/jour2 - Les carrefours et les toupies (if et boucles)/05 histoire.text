@@ -1,0 +1,34 @@
+🌀 Les toupies (boucles)
+Imagine que tu fais une toupie 🪀. Elle tourne, tourne, tourne… jusqu'à ce qu'elle s'arrête.
+
+Une boucle, c'est pareil. On répète la même chose plusieurs fois.
+
+La boucle « for » — « pour chaque chose »
+dart
+// Pour chaque fruit dans ma liste, je dis son nom
+var fruits = ['mangue', 'banane', 'avocat'];
+
+for (var fruit in fruits) {
+  print('J\'ai une $fruit');
+}
+Ça dit :
+
+text
+J'ai une mangue
+J'ai une banane
+J'ai un avocat
+La boucle « while » — « tant que »
+dart
+var bonbons = 3;
+
+while (bonbons > 0) {
+  print('Je mange un bonbon ! Il reste ${bonbons - 1}');
+  bonbons = bonbons - 1;
+}
+Ça dit :
+
+text
+Je mange un bonbon ! Il reste 2
+Je mange un bonbon ! Il reste 1
+Je mange un bonbon ! Il reste 0
+ATTENTION ! Si tu oublies de faire bonbons - 1, la boucle tourne pour toujours ! Elle s'arrête jamais ! 🔄♾️ C'est comme une toupie qui ne s'arrête jamais.
