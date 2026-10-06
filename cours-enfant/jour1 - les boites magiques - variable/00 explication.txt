@@ -1,0 +1,142 @@
+🎈 L'histoire
+Imagine ta chambre. Tu as des boîtes. Dans chaque boîte, tu ranges une chose :
+
+Une boîte pour tes bonbons 🍬
+
+Une boîte pour tes jouets 🧸
+
+Une boîte pour tes chaussettes 🧦
+
+Sur chaque boîte, tu colles une étiquette : « BONBONS », « JOUETS », « CHAUSSETTES ».
+
+En Dart, c'est pareil ! Une variable, c'est une boîte avec une étiquette. Dedans, tu mets une chose.
+
+dart
+// Une boîte étiquetée "bonbons", avec 5 bonbons dedans
+var bonbons = 5;
+
+// Une boîte étiquetée "nom", avec "Joshered" écrit dessus
+var nom = 'Joshered';
+🎨 Les différentes sortes de boîtes (les types)
+À l'école, tu as appris qu'il y a différentes formes : rond, carré, triangle. En Dart, c'est pareil, mais pour les choses qu'on met dans les boîtes :
+
+Boîte	Ce qu'on met dedans	Exemple
+int	Des nombres entiers (pas de virgule)	5, 100, -3
+double	Des nombres à virgule	3.14, 2500.5
+String	Du texte (des mots)	'Haricot', 'Bonjour'
+bool	Vrai ou Faux	true, false
+Règle importante : une boîte int ne peut contenir que des nombres entiers. Si tu essaies de mettre du texte dedans, l'ordinateur refuse ! C'est comme essayer de mettre un éléphant dans une boîte à chaussures. 🐘👞
+
+🔒 Les 4 façons de fermer les boîtes
+Tu as 4 façons de fermer tes boîtes :
+
+var = boîte normale. Tu peux l'ouvrir et changer ce qu'il y a dedans.
+
+final = boîte fermée avec du scotch. Tu ne peux plus changer ce qu'il y a dedans.
+
+const = boîte scellée à l'usine. Elle ne changera JAMAIS, jamais de la vie.
+
+late = boîte vide pour l'instant, mais tu promets de la remplir plus tard.
+
+dart
+var bonbons = 5;              // Tu peux changer : bonbons = 10 ✅
+final nom = 'Joshered';        // Ne change plus
+const pi = 3.14;               // C'est gravé dans le marbre
+late String adresse;           // Sera rempli plus tard
+adresse = 'Goma';              // Voilà, c'est rempli
+Astuce de mémoire :
+
+var = boîte variable (change)
+
+final = boîte finie (scotchée)
+
+const = boîte constante (usine)
+
+❓ La boîte qui peut être vide (Null Safety)
+Parfois, tu as une boîte vide. Dedans, il n'y a rien. En Dart, on dit que la boîte est null (ça veut dire « rien du tout »).
+
+Mais attention ! Dart est très gentil : il te prévient à l'avance quand une boîte peut être vide.
+
+dart
+String nom = 'Haricot';       // Cette boîte a TOUJOURS quelque chose
+String? surnom;                // Le petit "?" dit "peut-être vide"
+Le petit ? = « attention, cette boîte peut être vide ! »
+
+Et si une boîte peut être vide, on doit vérifier avant de l'ouvrir. Sinon, on se cogne les doigts ! 😅
+
+dart
+String? surnom;                // Vide
+
+// Comment lire la boîte en sécurité ?
+print(surnom ?? 'pas de surnom');  // ?? = "si c'est vide, mets ça"
+Les 4 mots magiques pour gérer les boîtes vides :
+
+Symbole	Ce que ça veut dire
+?	« cette boîte peut être vide »
+!	« je te jure, elle n'est PAS vide » (attention, dangereux !)
+??	« si c'est vide, mets autre chose »
+?.	« touche-la seulement si elle n'est pas vide »
+Comment retenir : « Peut-être vide, je jure, au pire, prudence. »
+
+💻 On écrit du vrai code !
+Ouvre ton ordinateur. On va écrire un petit programme qui parle de ta boutique.
+
+dart
+void main() {
+  // Une boîte pour le nom de la boutique (jamais vide, jamais changée)
+  const nomBoutique = 'BOUTIQUE LUKANGA';
+  
+  // Une boîte pour le nombre de sacs de haricot
+  var sacsHaricot = 10;
+  sacsHaricot = 15;   // J'ai ajouté 5 sacs !
+  
+  // Une boîte pour le prix du haricot (à virgule)
+  const prixKilo = 2500.0;
+  
+  // Une boîte qui peut être vide : le fournisseur
+  String? fournisseur;
+  
+  // On affiche tout à l'écran
+  print('Bienvenue à la $nomBoutique');
+  print('Haricot : $sacsHaricot sacs');
+  print('Prix : $prixKilo FC/kg');
+  print('Fournisseur : ${fournisseur ?? "pas encore choisi"}');
+}
+Résultat à l'écran :
+
+text
+Bienvenue à la BOUTIQUE LUKANGA
+Haricot : 15 sacs
+Prix : 2500.0 FC/kg
+Fournisseur : pas encore choisi
+🎯 Petit jeu pour s'entraîner
+Le jeu des boîtes : je te dis une chose, tu me dis le type :
+
+5 → ? → int
+
+'Haricot' → ? → String
+
+2500.5 → ? → double
+
+true → ? → bool
+
+rien → ? → null
+
+Bravo ! 👏
+
+✍️ Petit exercice
+Écris un programme avec :
+
+Une boîte const pour 'Goma'
+
+Une boîte var pour 10 (change-la en 20)
+
+Une boîte String? vide (affiche 'pas de nom' si vide)
+
+🎁 Ce que tu as appris aujourd'hui
+- Les boîtes (variables)
+- Les types (int, double, String, bool)
+- Les 4 fermetures (var, final, const, late)
+- Le petit ? magique (Null Safety)
+
+Demain, on apprendra à l'ordinateur à faire des CHOIX ! 🌟
