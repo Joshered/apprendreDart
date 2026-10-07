@@ -6,4 +6,6 @@ void main(){
   };
 
   print(prix['Haricot']);  // 2500.0 (le prix du haricot)
+  prix['Arachide'] = 4000.0;   // Ajoute une nouvelle ligne
+  print(prix.containsKey('Maïs'));  // true
 }
