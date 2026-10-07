@@ -1,0 +1,100 @@
+🎈 L'histoire
+Aujourd'hui, tes boîtes simples ne suffisent plus. Tu as beaucoup de choses à ranger :
+
+10 sacs de haricot à compter
+
+5 clients à retenir
+
+Le prix de chaque produit
+
+Tu as besoin de grandes boîtes spéciales. Dart te donne 3 grandes boîtes magiques.
+
+📋 La Liste (List) — la file d'attente
+Imagine une file d'attente devant ta boutique. Chaque personne a une place :
+
+Le 1er, le 2e, le 3e…
+
+En Dart, c'est la List !
+
+dart
+var produits = ['Haricot', 'Maïs', 'Soja'];
+
+print(produits[0]);       // Haricot (la 1ère place, ça commence à 0 !)
+print(produits.length);   // 3 (il y a 3 produits)
+Attention : en informatique, on commence à compter à 0 ! Le 1er est le 0, le 2e est le 1… C'est bizarre mais c'est comme ça ! 😅
+
+Utilisation :
+
+dart
+var sacs = [10, 25, 15];
+
+sacs.add(30);         // Ajoute 30 à la fin
+sacs.remove(10);      // Enlève 10
+print(sacs.contains(25));  // true (est-ce que 25 est dedans ?)
+🎫 Le Set — la collection de cartes uniques
+Imagine que tu collectionnes les cartes de foot ⚽. Tu ne veux JAMAIS avoir 2 fois la même carte. C'est ça, un Set !
+
+dart
+var carte = {'Messi', 'Ronaldo', 'Neymar'};
+
+carte.add('Messi');   // Regarde, Messi est déjà là !
+print(carte.length);  // Toujours 3 (pas 4 !)
+Règle : un Set refuse les doublons (les choses en double).
+
+À quoi ça sert ? À trouver très vite si quelque chose est dedans. Beaucoup plus vite qu'une List !
+
+📖 Le Map — le carnet d'adresses
+Tu as un carnet d'adresses 📔. Sur chaque page :
+
+À gauche : le nom
+
+À droite : le numéro de téléphone
+
+En Dart, c'est la Map !
+
+dart
+var prix = {
+  'Haricot': 2500.0,
+  'Maïs': 1800.0,
+  'Soja': 3200.0,
+};
+
+print(prix['Haricot']);  // 2500.0 (le prix du haricot)
+Utilisation :
+
+dart
+prix['Arachide'] = 4000.0;   // Ajoute une nouvelle ligne
+print(prix.containsKey('Maïs'));  // true
+✨ Le trio magique : where, map, fold
+Écoute bien, Joshered ! C'est LA CHOSE la plus importante de tout le cours. Si tu comprends ça, tu deviens un super développeur.
+
+Imagine que tu as une pile de bonbons 🍬 :
+
+Tu veux garder seulement les rouges → where (filtre)
+
+Tu veux changer chaque bonbon en bonbon au chocolat → map (transforme)
+
+Tu veux compter combien de bonbons il y a en tout → fold (réduit)
+
+dart
+var bonbons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// Garde seulement les pairs
+var pairs = bonbons.where((b) => b % 2 == 0).toList();
+print(pairs);  // [2, 4, 6, 8, 10]
+
+// Multiplie chaque bonbon par 10
+var grands = bonbons.map((b) => b * 10).toList();
+print(grands);  // [10, 20, 30, ...]
+
+// Additionne tous les bonbons
+var total = bonbons.fold(0, (a, b) => a + b);
+print(total);  // 55
+L'enchaînement magique (pipeline) :
+
+dart
+var resultat = bonbons
+    .where((b) => b > 5)       // 6, 7, 8, 9, 10
+    .map((b) => b * 10)        // 60, 70, 80, 90, 100
+    .fold(0, (a, b) => a + b); // 400
+C'est comme une chaîne de fabrication : la matière entre d'un côté, le produit fini sort de l'autre !
